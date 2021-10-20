@@ -47,9 +47,14 @@ class Car implements Comparable<Car> {
     public String model() {
         return this.model;
     }
-    public int compareTo( Car car ){
+    public int compareTo1( Car car ){
         return this.year() - car.year();
     }
 
+	@Override
+	public int compareTo(Car o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 } 
 
