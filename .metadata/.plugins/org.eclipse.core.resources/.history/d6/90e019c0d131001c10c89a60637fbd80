@@ -1,0 +1,29 @@
+package lab;
+
+import java.util.ArrayList;
+
+public class ArrayListMain {
+	static ArrayList<Integer> listNames = new ArrayList<>();
+	public static void main(String[] args) {
+	listNames.add(5);
+	listNames.add(10);
+	listNames.add(6);
+	listNames.add(46);
+	listNames.add(50);
+	listNames.add(34);
+	listNames.add(11);
+	listNames.add(22);
+	listNames.add(36);
+	listNames.add(33);
+	
+	ArrayListMain show = new ArrayListMain();
+	show.displayList(listNames);
+	}
+	
+	void displayList(ArrayList<Integer> numbers) {
+		for(Integer number: numbers) {
+			System.out.println(number);
+		}
+	}
+
+}

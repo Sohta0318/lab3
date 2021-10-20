@@ -1,0 +1,13 @@
+package lab;
+
+import java.util.List;
+
+public class ArrayListMain {
+	static ArrayList <Interger> listNames = new ArrayList<>();
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

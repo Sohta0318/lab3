@@ -1,0 +1,40 @@
+package lab;
+
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+
+public class ArrayListMain {
+	static ArrayList<Integer> listNames = new ArrayList<>();
+	public static void main(String[] args) {
+		Random rondom = new Random();	
+		 int iValue = rondom.nextInt(100);	
+		 for(int i = 0; i <= 10;i++) {
+			 listNames.add(iValue);
+		 }
+//	listNames.add(5);
+//	listNames.add(10);
+//	listNames.add(6);
+//	listNames.add(46);
+//	listNames.add(50);
+//	listNames.add(34);
+//	listNames.add(11);
+//	listNames.add(22);
+//	listNames.add(36);
+//	listNames.add(33);
+	
+	ArrayListMain show = new ArrayListMain();
+	show.displayList(listNames);
+	
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("Enter number");
+	int input_num = scanner.nextInt();
+	}
+	
+	void displayList(ArrayList<Integer> numbers) {
+		for(Integer number: numbers) {
+			System.out.println(number);
+		}
+	}
+
+}
