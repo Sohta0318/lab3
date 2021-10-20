@@ -1,0 +1,21 @@
+package lab;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class CollectionsSortWithoutComparator {
+    public static void main(String[] args) {
+        ArrayList <CarImplementedComparable>list = new ArrayList<CarImplementedComparable>();//[1]
+        list.add(new CarImplementedComparable(105, "red"));//[2]
+        list.add(new CarImplementedComparable(102, "blue"));//[3]
+        list.add(new CarImplementedComparable(101, "green"));//[4]
+        list.add(new CarImplementedComparable(104, "yellow"));//[5]
+        list.add(new CarImplementedComparable(103, "black"));//[6]
+
+        Collections.sort(list);//[7]
+        for (CarImplementedComparable carNumber: list) {//[8]
+            System.out.print("[9] Car Number = " + carNumber.number());//[9]
+            System.out.println(", Cokor = " + carNumber.color());
+        }
+    }
+}

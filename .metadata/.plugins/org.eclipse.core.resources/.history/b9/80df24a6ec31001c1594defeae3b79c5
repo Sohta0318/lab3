@@ -1,0 +1,57 @@
+package lab;
+
+
+public class Lab implements Comparable<CarImplementedComparable> {//[20]
+    private int number;//[21]
+    private String color;//[22]
+    public Car(int number, String color) {//[23]
+        this.number = number;//[24]
+        this.color = color;//[25]
+    }
+    public int number() {//[26]
+        return this.number;//[27]
+    }
+    public String color() {//[28]
+        return this.color;//[29]
+    }
+    @Override
+    public int compareTo( CarImplementedComparable car ){//[11]
+        return this.number() - car.number();//[12]
+    }
+} 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+public class CarImplementedComparable implements Comparable<CarImplementedComparable> {//[20]
+    private int number;//[21]
+    private String color;//[22]
+    public CarImplementedComparable(int number, String color) {//[23]
+        this.number = number;//[24]
+        this.color = color;//[25]
+    }
+    public int number() {//[26]
+        return this.number;//[27]
+    }
+    public String color() {//[28]
+        return this.color;//[29]
+    }
+    @Override
+    public int compareTo( CarImplementedComparable car ){//[11]
+        return this.number() - car.number();//[12]
+    }
+} 
